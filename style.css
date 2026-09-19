@@ -1,0 +1,313 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Header do site */
+header {
+  background: linear-gradient(135deg, #4e3e2f, #6f4e37);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header .logo .icone {
+  width: 36px;
+  height: 36px;
+  background-color: #d9a066;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+/*A logo do café do meu header*/
+.header .logo .icone::before {
+  content: "☕";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.header .logo h1 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px #2b1a10;
+  margin: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #1e1a17;
+  color: #f5f0e8;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Courier New', monospace;
+}
+
+/* Apresentação */
+#apresentacao {
+  background: linear-gradient(135deg, #3b2418, #6f4e37);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#apresentacao .banner {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+#apresentacao h1 {
+  font-size: 3rem;
+  color: #ffd7a3;
+  text-shadow: 2px 2px 0px #2b1a10;
+}
+
+#apresentacao .subtitulo {
+  font-size: 1.2rem;
+  color: #f5e6d3;
+  margin-top: 15px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* Sobre */
+#sobre {
+  background-color: #2a221c;
+  text-align: center;
+}
+
+#sobre h2 {
+  color: #d9a066;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #6f4e37;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+#sobre .img-sobre {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e0d5c5;
+}
+
+/* Grid de Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #2f2620;
+  border: 1px solid #4a382a;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  border-color: #d9a066;
+}
+
+.card .img-card {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #ffd7a3;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #d3c4b4;
+  font-size: 0.95rem;
+}
+
+#palestras, #workshops {
+  background-color: #1e1a17;
+}
+
+#palestras h2, #workshops h2 {
+  text-align: center;
+  color: #d9a066;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Programação */
+#programacao {
+  background-color: #2a221c;
+}
+
+#programacao h2 {
+  text-align: center;
+  color: #d9a066;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.lista-programacao {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 3px solid #6f4e37;
+  padding-left: 20px;
+}
+
+.lista-programacao li {
+  background-color: #332821;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.lista-programacao li::before {
+  position: absolute;
+  left: -34px;
+  top: 12px;
+}
+
+.lista-programacao strong {
+  color: #ffd7a3;
+  margin-right: 8px;
+}
+
+/* Convidados */
+#convidados {
+  background-color: #1e1a17;
+  text-align: center;
+}
+
+#convidados h2 {
+  color: #d9a066;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card.convidado .img-convidado {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d9a066;
+  margin-bottom: 15px;
+}
+
+/* Informações do Evento */
+#informacoes {
+  background: linear-gradient(135deg, #6f4e37, #3b2418);
+  text-align: center;
+}
+
+#informacoes h2 {
+  color: #ffd7a3;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#informacoes .img-local {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#informacoes ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#informacoes ul li {
+  background-color: rgba(0,0,0,0.25);
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#informacoes ul strong {
+  color: #ffd7a3;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #4e3e2f;
+    color:#d3c4b4;
+    padding:40px 70px 20px;
+    margin-top:50px;
+}
+.footer-conteudo{
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+    max-width:1200px;
+    margin:0 auto;
+}
+.footer-coluna{
+    max-width:400px;
+}
+.footer-coluna h2{
+font-size: 30px;
+margin-bottom:15px;
+}
+.footer-coluna h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.footer-final{
+    border-top:1px solid;
+    margin-top: 35px;
+    padding-top:20px;
+
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+.footer-final{
+    font-size: 14px;
+}
